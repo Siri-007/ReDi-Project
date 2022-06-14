@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(65, 60, 60);
+    background-color: rgb(124, 120, 120)
 }
 
 ul li {
@@ -23,7 +23,7 @@ ul li {
 
 .nav li {
     margin-left: 20%;
-    color: white;
+    /* color: white; */
 }
 
 li a:hover {
@@ -97,5 +97,10 @@ a {
     }
     #intro {
         margin-left: 50px;
+    }
+    .footer {
+        position: relative;
+        top: 0;
+        left: 0;
     }
 }

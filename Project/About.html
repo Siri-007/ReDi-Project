@@ -9,7 +9,7 @@
     <title>Sireesha Koduri</title>
 </head>
 <style>
-    body {
+        body {
         background-color: white;
     }
     /* styling navbar */
@@ -19,7 +19,7 @@
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: rgb(65, 60, 60)
+        background-color: rgb(124, 120, 120)
     }
     
     ul li {
@@ -84,7 +84,7 @@
     .column {
         display: inline;
         width: 35%;
-        height: 10cm;
+        height: 8cm;
         float: left;
         padding: 2px;
         margin: 4px;
@@ -94,7 +94,6 @@
         text-overflow: hidden;
         color: black;
         margin-left: 4cm;
-        border: 1px solid black;
     }
     /* Media queries */
     
@@ -102,6 +101,11 @@
         .column {
             width: 75%;
             margin-left: 0;
+        }
+        .footer {
+            position: relative;
+            top: 0;
+            left: 0;
         }
     }
     
@@ -114,7 +118,27 @@
             display: block;
             margin-left: 0;
         }
-    }
+        .footer {
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        @media screen and (max-width: 450px) {
+            .column {
+                width: 100%;
+                margin-left: 0;
+                overflow: scroll;
+            }
+            .nav li {
+                display: block;
+                margin-left: 0;
+            }
+            .footer {
+                position: relative;
+                top: 0;
+                right: 0;
+            }
+        }
 </style>
 
 <body>
@@ -153,10 +177,10 @@
         </div>
         <div class="column">
             <h2>I like...</h2>
-            <p> <img src="pics/travel.png" alt="travelling" width="50px">Travelling.</p>
-            <p> <img src="pics/shopping.png" alt="shopping" width="50px">shopping.</p>
-            <p> <img src="pics/coffee.png" alt="coffee" width="50px">Coffee with cake.</p>
-            <p> <img src="pics/puppy.png" alt="puppy" width="50px"> Dogs.</p>
+            <p> <img src="pics/travel.png" alt="travelling" width="40px">Travelling.</p>
+            <p> <img src="pics/shopping.png" alt="shopping" width="40px">shopping.</p>
+            <p> <img src="pics/coffee.png" alt="coffee" width="40px">Coffee with cake.</p>
+            <p> <img src="pics/puppy.png" alt="puppy" width="40px"> Dogs.</p>
         </div>
 
     </div>

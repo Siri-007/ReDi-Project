@@ -10,7 +10,7 @@
     <title>Sireesha Koduri</title>
 
     <style>
-        /* Styling the navbar */
+            /* Styling the navbar */
         
         body {
             background-color: white;
@@ -21,7 +21,7 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background-color: rgb(65, 60, 60)
+            background-color: rgb(124, 120, 120)
         }
         
         ul li {
@@ -72,8 +72,8 @@
             border: 4px;
             font-size: x-large;
             font-weight: bold;
-            font-style: italic;
             margin-top: 2cm;
+            font-family: Arial, Helvetica, sans-serif;
         }
         
         input[type=text],
@@ -114,12 +114,23 @@
         }
         /* Media queries */
         
-        @media screen and (max-width: 992px) {
-            .nav li {
-                display: block;
-                margin-left: 0;
+        @media screen and (max-width: 1600px) and (min-width: 992px) {
+            .footer {
+                position: relative;
+                top: 0;
+                left: 0;
             }
-        }
+            @media screen and (max-width: 992px) {
+                .nav li {
+                    display: block;
+                    margin-left: 0;
+                }
+                .footer {
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                }
+            }
     </style>
 </head>
 
