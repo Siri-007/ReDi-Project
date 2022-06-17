@@ -68,7 +68,8 @@
         font-family: Helvetica, sans-serif;
         font-size: 1.5em;
         text-align: justify;
-        margin-left: 2cm;
+        margin-left: 150px;
+        margin-top: 10px;
     }
     
     h2 {
@@ -77,30 +78,51 @@
         font-size: 2em;
         color: black;
         text-align: center;
-        margin-top: 1cm;
+        margin-top: 100px;
     }
     /* styling the boxes */
     
     .column {
         display: inline;
         width: 35%;
-        height: 8cm;
+        height: 350px;
         float: left;
-        padding: 2px;
+        padding: 10px;
         margin: 4px;
         text-align: center;
-        margin-top: 2cm;
+        margin-top: 70px;
         background-color: rgb(209, 202, 202);
         text-overflow: hidden;
         color: black;
-        margin-left: 4cm;
+        margin-left: 150px;
+    }
+    
+    .image {
+        margin-right: 230px;
+    }
+    
+    h3 {
+        font-size: 2em;
+    }
+    
+    .likes {
+        display: inline-flex;
+        margin: 0;
+        padding: 4px;
+        margin-right: 170px;
     }
     /* Media queries */
     
-    @media screen and (max-width: 1200px) {
+    @media only screen and (min-width: 992px) and (max-width: 1500px) {
         .column {
             width: 75%;
-            margin-left: 0;
+            margin-left: 150px;
+        }
+        p {
+            margin-left: 200px;
+        }
+        .image {
+            margin-left: 10px;
         }
         .footer {
             position: relative;
@@ -109,7 +131,7 @@
         }
     }
     
-    @media screen and (max-width: 992px) {
+    @media screen and (min-width: 600px) and (max-width: 992px) {
         .column {
             width: 100%;
             margin-left: 0;
@@ -123,21 +145,28 @@
             top: 0;
             left: 0;
         }
-        @media screen and (max-width: 450px) {
-            .column {
-                width: 100%;
-                margin-left: 0;
-                overflow: scroll;
-            }
-            .nav li {
-                display: block;
-                margin-left: 0;
-            }
-            .footer {
-                position: relative;
-                top: 0;
-                right: 0;
-            }
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .column {
+            width: 100%;
+            margin-left: 0;
+            overflow: scroll;
+        }
+        p {
+            margin-left: 0;
+        }
+        .nav li {
+            display: block;
+            margin-left: 0;
+        }
+        .footer {
+            position: relative;
+            top: 0;
+            right: 0;
+        }
+        .image {
+            margin-right: 10px;
         }
 </style>
 
@@ -152,37 +181,37 @@
             </li>
         </ul>
     </div>
-    <div class="row">
-        <div class="column">
-            <img src="pics/programming.png" alt="Web Designing tools" width="100px">
-            <h2>What I learned</h2>
-            <p>HTML and CSS -ReDi Hamburg</p>
-            <p>Able to create a Website using Html and CSS.</p>
-            <p>Basics of Git and GitHub -Google</p>
-        </div>
-        <div class="column">
-            <img src="pics/JS.png" alt="Programming tools" width="100px">
-            <h2> Inquisitive..</h2>
-            <p> Javascript/jQuery and libraries like React/Angular.</p>
-            <p>Adobe illustrator.</p>
-            <p>Search-engine optimization. </p>
+    <div class="column">
+        <div class="image"> <img src="pics/programming.png" alt="Web Designing tools" width="100px"> </div>
+        <h2>What I learned</h2>
+        <p>HTML and CSS -ReDi Hamburg</p>
+        <p>Able to create a Website using Html and CSS.</p>
+        <p>Basics of Git and GitHub -Google</p>
+    </div>
+    <div class="column">
+        <div class="image"><img src="pics/JS.png" alt="Programming tools" width="100px"></div>
+        <h2> Inquisitive..</h2>
+        <p> Javascript/jQuery and libraries like React/Angular.</p>
+        <p>Adobe illustrator.</p>
+        <p>Search-engine optimization. </p>
+
+    </div>
+    <div class="column">
+        <div class="image"><img src="pics/lang.png" alt="languages" width="100px"></div>
+        <h2> Languages I Know..</h2>
+        <p id="lang ">English - Bilingual Proficiency</p>
+        <p id="lang ">German - Working Proficiency</p>
+        <p id="lang "> Hindi and Telugu - Bilingual Proficiency</p>
+    </div>
+    <div class="column">
+        <h3>I like... </h3>
+        <div class="likes">
+            <img src="pics/travel.png" alt="travelling" width="60px">
+            <img src="pics/shopping.png" alt="shopping" width="60px">
+            <img src="pics/coffee.png" alt="coffee" width="60px">
+            <img src="pics/puppy.png" alt="puppy" width="60px">
 
         </div>
-        <div class="column">
-            <img src="pics/lang.png" alt="languages" width="100px">
-            <h2> Languages I Know..</h2>
-            <p id="lang ">English - Bilingual Proficiency</p>
-            <p id="lang ">German - Working Proficiency</p>
-            <p id="lang "> Hindi and Telugu - Bilingual Proficiency</p>
-        </div>
-        <div class="column">
-            <h2>I like...</h2>
-            <p> <img src="pics/travel.png" alt="travelling" width="40px">Travelling.</p>
-            <p> <img src="pics/shopping.png" alt="shopping" width="40px">shopping.</p>
-            <p> <img src="pics/coffee.png" alt="coffee" width="40px">Coffee with cake.</p>
-            <p> <img src="pics/puppy.png" alt="puppy" width="40px"> Dogs.</p>
-        </div>
-
     </div>
 
     <div class="footer">

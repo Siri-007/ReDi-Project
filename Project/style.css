@@ -51,10 +51,14 @@ li a:hover {
 /* styling the image */
 
 #pic {
+    position: static;
     border: 1px solid white;
-    margin-top: 2cm;
-    padding: 1px;
+    margin: 0;
+    padding: 0;
     background-color: white;
+    float: right;
+    margin-right: 10%;
+    margin-top: 0;
 }
 
 img {
@@ -63,27 +67,30 @@ img {
 }
 
 h1 {
-    text-align: center;
-    margin-top: 200px;
+    position: relative;
+    top: 5cm;
+    margin-top: 30px;
     font-size: 4em;
+    text-align: center;
 }
 
 
 /* styling the paragraph */
 
 #intro {
-    display: block;
-    position: relative;
-    width: 50%;
+    display: flexbox;
+    position: static;
+    width: 40%;
     top: 0;
     left: 0;
     font-size: 1.5em;
     font-family: Helvetica;
     color: black;
     text-align: justify;
-    margin-left: 150px;
     line-height: 1.6;
     font-weight: bold;
+    margin-top: 250px;
+    margin-left: 30%;
 }
 
 a {
@@ -96,11 +103,37 @@ a {
         margin-left: 0;
     }
     #intro {
-        margin-left: 50px;
+        text-align: justify;
+        width: fit-content;
+        margin-top: 480px;
+        margin-right: 35px;
+        margin-left: 0;
     }
     .footer {
         position: relative;
         top: 0;
         left: 0;
+    }
+    img {
+        display: inline;
+        margin-right: 15%;
+    }
+    #pic {
+        position: relative;
+        margin-right: 20px;
+        float: none;
+        margin-left: 400px;
+    }
+    h1 {
+        position: relative;
+        top: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #pic {
+        margin-left: 200px;
+        margin-top: 50px;
     }
 }

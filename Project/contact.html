@@ -10,7 +10,7 @@
     <title>Sireesha Koduri</title>
 
     <style>
-            /* Styling the navbar */
+        /* Styling the navbar */
         
         body {
             background-color: white;
@@ -66,13 +66,13 @@
         fieldset {
             position: relative;
             align-items: center;
-            margin-left: 2cm;
+            margin-left: 20px;
             border-style: dotted;
             overflow: hidden;
             border: 4px;
             font-size: x-large;
             font-weight: bold;
-            margin-top: 2cm;
+            margin-top: 50px;
             font-family: Arial, Helvetica, sans-serif;
         }
         
@@ -95,7 +95,7 @@
             left: 0;
             bottom: 0;
             width: 25%;
-            margin-top: 1.5cm;
+            margin-top: 50px;
             margin-left: 20%;
         }
         
@@ -106,11 +106,14 @@
             text-decoration: underline;
         }
         
-        h4 {
-            display: block;
+        section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 2em;
             font-weight: bold;
+            width: 100%;
         }
         /* Media queries */
         
@@ -118,19 +121,21 @@
             .footer {
                 position: relative;
                 top: 0;
-                left: 0;
+                right: 0;
             }
-            @media screen and (max-width: 992px) {
-                .nav li {
-                    display: block;
-                    margin-left: 0;
-                }
-                .footer {
-                    position: relative;
-                    top: 0;
-                    left: 0;
-                }
+        }
+        
+        @media screen and (max-width: 992px) {
+            .nav li {
+                display: block;
+                margin-left: 0;
             }
+            .footer {
+                position: relative;
+                top: 0;
+                right: 0;
+            }
+        }
     </style>
 </head>
 
@@ -174,15 +179,22 @@
         <h3> Let's get in touch!</h3>
         <p> I am always reachable and prefers Email.</p>
         <section>
-            <h4><img src="pics/email.png " alt="Email " width="20%"> siris.koduri@gmail.com</h4> <br>
+            <h4> siri.koduri@gmail.com</h4>
+            <img src="pics/email.png " alt="Email " width="20%">
+        </section>
 
+        <section>
+            <h4> 0123456799 </h4>
+            <img src="pics/phone.png " alt="phone " width="20%">
+        </section>
 
-            <h4> <img src="pics/phone.png " alt="phone " width="20%"> 0123456799 </h4> <br>
-
-
-            <h4><img src="pics/address.png " alt="address " width="20%"> Hamburg, 22523.</h4> <br>
+        <section>
+            <h4> Hamburg, 22523.</h4>
+            <img src="pics/address.png " alt="address " width="20%">
 
         </section>
+
+
 
 
     </div>

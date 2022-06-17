@@ -32,7 +32,7 @@
     
     .nav li {
         margin-left: 20%;
-        color: white;
+        /* color: white; */
     }
     
     li a:hover {
@@ -56,10 +56,14 @@
     /* styling the image */
     
     #pic {
+        position: static;
         border: 1px solid white;
-        margin-top: 2cm;
-        padding: 1px;
+        margin: 0;
+        padding: 0;
         background-color: white;
+        float: right;
+        margin-right: 10%;
+        margin-top: 0;
     }
     
     img {
@@ -68,25 +72,28 @@
     }
     
     h1 {
-        text-align: center;
-        margin-top: 200px;
+        position: relative;
+        top: 5cm;
+        margin-top: 30px;
         font-size: 4em;
+        text-align: center;
     }
     /* styling the paragraph */
     
     #intro {
-        display: block;
-        position: relative;
-        width: 50%;
+        display: flexbox;
+        position: static;
+        width: 40%;
         top: 0;
         left: 0;
         font-size: 1.5em;
         font-family: Helvetica;
         color: black;
         text-align: justify;
-        margin-left: 150px;
         line-height: 1.6;
         font-weight: bold;
+        margin-top: 250px;
+        margin-left: 30%;
     }
     
     a {
@@ -99,12 +106,38 @@
             margin-left: 0;
         }
         #intro {
-            margin-left: 50px;
+            text-align: justify;
+            width: fit-content;
+            margin-top: 480px;
+            margin-right: 35px;
+            margin-left: 0;
         }
         .footer {
             position: relative;
             top: 0;
             left: 0;
+        }
+        img {
+            display: inline;
+            margin-right: 15%;
+        }
+        #pic {
+            position: relative;
+            margin-right: 20px;
+            float: none;
+            margin-left: 400px;
+        }
+        h1 {
+            position: relative;
+            top: 5cm;
+            text-align: center;
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        #pic {
+            margin-left: 200px;
+            margin-top: 200px;
         }
     }
 </style>
@@ -121,14 +154,14 @@
         </ul>
     </div>
     |
+    <h1> Sireesha Koduri</h1>
     <div id="pic">
         <img src="pics/siri.png" width="300px" alt="Picture of Siri">
-        <h1> Sireesha Koduri</h1>
-
-
     </div>
 
-    <p id="intro">I am a post-graduate in Life-Science. I am eager to learn new skills and like to keep a positive attitude. Having the knowledge to build a website with HTML and CSS, empowered me to pursue a career as Web developer.
+
+    <p id="intro">
+        I am a post-graduate in Life-Science. I am eager to learn new skills and like to keep a positive attitude. Having the knowledge to build a website with HTML and CSS, empowered me to pursue a career as Web developer.
 
     </p>
     <div class="footer">
