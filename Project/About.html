@@ -9,7 +9,7 @@
     <title>Sireesha Koduri</title>
 </head>
 <style>
-        body {
+    body {
         background-color: white;
     }
     /* styling navbar */
@@ -87,7 +87,7 @@
         width: 35%;
         height: 350px;
         float: left;
-        padding: 10px;
+        padding: 8px;
         margin: 4px;
         text-align: center;
         margin-top: 70px;
@@ -105,11 +105,10 @@
         font-size: 2em;
     }
     
-    .likes {
-        display: inline-flex;
-        margin: 0;
-        padding: 4px;
-        margin-right: 170px;
+    section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     /* Media queries */
     
@@ -117,6 +116,7 @@
         .column {
             width: 75%;
             margin-left: 150px;
+            overflow: scroll;
         }
         p {
             margin-left: 200px;
@@ -135,6 +135,7 @@
         .column {
             width: 100%;
             margin-left: 0;
+            overflow: scroll;
         }
         .nav li {
             display: block;
@@ -168,6 +169,7 @@
         .image {
             margin-right: 10px;
         }
+    }
 </style>
 
 <body>
@@ -190,7 +192,7 @@
     </div>
     <div class="column">
         <div class="image"><img src="pics/JS.png" alt="Programming tools" width="100px"></div>
-        <h2> Inquisitive..</h2>
+        <h2> Inquisitive.. </h2>
         <p> Javascript/jQuery and libraries like React/Angular.</p>
         <p>Adobe illustrator.</p>
         <p>Search-engine optimization. </p>
@@ -198,7 +200,7 @@
     </div>
     <div class="column">
         <div class="image"><img src="pics/lang.png" alt="languages" width="100px"></div>
-        <h2> Languages I Know..</h2>
+        <h2> Languages I Know.. </h2>
         <p id="lang ">English - Bilingual Proficiency</p>
         <p id="lang ">German - Working Proficiency</p>
         <p id="lang "> Hindi and Telugu - Bilingual Proficiency</p>
@@ -206,10 +208,21 @@
     <div class="column">
         <h3>I like... </h3>
         <div class="likes">
-            <img src="pics/travel.png" alt="travelling" width="60px">
-            <img src="pics/shopping.png" alt="shopping" width="60px">
-            <img src="pics/coffee.png" alt="coffee" width="60px">
-            <img src="pics/puppy.png" alt="puppy" width="60px">
+            <section>
+                <p>Travelling </p>
+                <img src="pics/travel.png" alt="travelling" width="40px">
+            </section>
+            <section>
+                <p> Shopping</p>
+                <img src="pics/shopping.png" alt="shopping" width="30px">
+            </section>
+            <section>
+                <p>Coffee</p>
+                <img src="pics/coffee.png" alt="coffee" width="40px"></section>
+
+            <section>
+                <p>Dogs</p>
+                <img src="pics/puppy.png" alt="puppy" width="40px"></section>
 
         </div>
     </div>
